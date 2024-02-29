@@ -19,10 +19,10 @@ func NewRouter(tagsController *controller.TagsController) *gin.Engine {
 	tagRouter := baseRouter.Group("/tags")
 
 	tagRouter.GET("", tagsController.GetAllTags)
-	tagRouter.GET("/:id", tagsController.GetById)
+	tagRouter.GET("/:tagId", tagsController.GetById)
 	tagRouter.POST("", tagsController.CreateTag)
-	tagRouter.PUT("/:id", tagsController.UpdateTag)
-	tagRouter.DELETE("/:id", tagsController.DeleteTag)
+	tagRouter.PUT("/:tagId", tagsController.UpdateTag)
+	tagRouter.DELETE("/:tagId", tagsController.DeleteTag)
 
 	return router
 
