@@ -1,0 +1,24 @@
+.
+├── data
+│   ├── request
+│   │   ├── createTagRequest.go
+│   │   └── updateTagsRequest.go
+│   └── response
+│       ├── tagsResponse.go
+│       └── webResponse.go
+├── go.mod
+├── go.sum
+├── helper
+│   └── error.go
+├── main.go
+├── model
+│   └── tagsModel.go
+├── repository
+│   ├── tagsRepository.go
+│   └── tagsRepositoryImplementation.go
+├── service
+│   ├── tagsService.go
+│   └── tagsServiceImplementation.go
+└── tree.txt
+
+7 directories, 14 files
